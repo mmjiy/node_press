@@ -15,9 +15,9 @@ function getPage(index) {
   }, (err, res, body) => {
     
     if (res && res.statusCode && res.statusCode == 200) {
-      console.log(`${new Date().toLocaleString()}--请求成功---${res.statusCode}`, urlAddress)
+      console.log(`${new Date().toLocaleString()}--请求成功--${res.statusCode}`, urlAddress)
     } else  {
-      console.log(`${new Date().toLocaleString()}--请求失败---${err}`, urlAddress)
+      console.log(`${new Date().toLocaleString()}--请求失败--${err}`, urlAddress)
     }
 
   }
